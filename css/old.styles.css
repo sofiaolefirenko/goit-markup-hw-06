@@ -301,6 +301,7 @@ p {
 }
 
 .title-container {
+    display: flex;
     width: calc((100% - 72px) / 4);
 }
 
