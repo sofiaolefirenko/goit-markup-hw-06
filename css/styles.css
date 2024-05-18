@@ -54,7 +54,7 @@ p {
 }
 
 .container {
-    max-width: 320px;
+    max-width: 1158px;
     padding: 0 16px;
     margin: 0 auto;
 }
@@ -118,10 +118,12 @@ p {
  }
 
  .button-mobile-burger {
-    padding: 0;
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .burger-phone {
@@ -664,8 +666,14 @@ p {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 48px;
+    gap: 48px;
     justify-content: center;
+    flex-direction: column;
+}
+
+.ovner-portfolio {
+    position: relative;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 320px) {
@@ -1156,15 +1164,14 @@ position: fixed;
 
 /* ====MOBAIL MENU===== */
 
-.mobail-menu.open-first {
-        opacity: 1;
-        visibility: visible;
-}
-@media screen and  (max-width:767px) {
+   .mobail-menu.is-open {
+    transform: translateX(0%);
+   } 
+
 .mobail-menu {
         display: flex;
         position: fixed;
-        z-index: 999999999;
+        z-index: 10;
         top: 0;
         left: 0;
         width: 100%;
@@ -1172,17 +1179,24 @@ position: fixed;
         background: #fff;
         color: #2e2f42;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 72px 16px 40px;
+        overflow-y: auto;
+        transform: translate(100%);
     }
-
-    .mobail-menu-container {
-        padding-top: 72px;
-    }
+        .menu-list-item {
+            flex-direction: column;
+        }
+ .mobail-menu-nav {
+    margin-bottom: 168px;
+ }
 
     .mobail-menu-close-btn {
+        display: flex;
+        align-items: center;
         position: absolute;
         top: 24px;
         right: 24px;
-        line-height: 0;
+        cursor: pointer;
         padding: 0;
         width: 24px;
         height: 24px;
@@ -1194,14 +1208,6 @@ position: fixed;
         border-radius: 50%;
     }
 
-    .mobail-menu-nav {
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        margin-bottom: 168px;
-    }
-
   
 
     .not-scroll-header {
@@ -1211,20 +1217,27 @@ position: fixed;
  
 
     .menu-list-item {
-        display: block;
+        display: flex;
+        flex-direction: column;
         gap: 40px;
     }
 
-    .studio-visual {
+    .studio-visual.first {
         color: #404bbf;
     }
 
-    .navi-item-list {
+    .studio-visual {
         font-weight: 700;
         font-size: 36px;
-        line-height: 1.11111;
+        line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2e2f42;
-        margin-bottom: 40px;
+    }
+
+    
+
+@media screen and (min-width:320px) {
+    .container {
+        margine: 0;
     }
 }
