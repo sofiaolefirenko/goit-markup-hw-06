@@ -79,6 +79,15 @@ p {
 /* < !--====TABLET HEADER MENU=======--> */
 /* ========HEADER======= */
 
+
+.menu-contact-header {
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #434455;
+}
 .menu-contact {
     font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -206,6 +215,8 @@ p {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .nav-adress-one {
@@ -223,9 +234,7 @@ p {
     align-items: center;
 }
 
-.menu-adress{
-    margin-top: 48px;
-}
+
 
 .team-svg {
     fill: #f4f4fd;
@@ -262,6 +271,8 @@ p {
     display: flex;
     flex-direction: row;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-list-one {
@@ -519,6 +530,7 @@ p {
 /* < !--=========TEAM==========--> */
 .section-team {
     background-color: #f4f4fd;
+    padding: 96px 0;
 }
 
 .title-team {
@@ -1182,6 +1194,30 @@ position: fixed;
 /* ====MOBAIL MENU===== */
 .contacts-menu-list {
     font-family: "Roboto", sans-serif;
+    font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #4d5ae5;
+}
+
+.menu-adress {
+    margin-bottom: 24px;
+}
+
+.menu-adress-email {
+    margin-bottom: 48px;
+}
+
+.email-menu-list {
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+        font-style: normal;
 }
 
 @media screen and (min-width:320px) and (max-width:767px) {
@@ -1259,6 +1295,7 @@ position: fixed;
     }
 
 }
+
    
 
 @media screen and (max-width:320px) {
