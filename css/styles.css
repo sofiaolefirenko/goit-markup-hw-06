@@ -56,7 +56,7 @@ p {
 .container {
     max-width: 1158px;
     padding: 0 16px;
-    margin: 0 auto;
+    margin: 0
 }
 
 @media screen and (min-width: 768px ) {
@@ -79,6 +79,14 @@ p {
 /* < !--====TABLET HEADER MENU=======--> */
 /* ========HEADER======= */
 
+.menu-contact {
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
 .hero-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -385,7 +393,6 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #434455;
 }
 .benefits-div {
@@ -499,7 +506,13 @@ p {
             border: 1px solid #8e8f99;
             margin-bottom: 8px;
         }
-    
+    .title-benefits {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: #2e2f42;
+    }
 }
 
 
@@ -620,6 +633,9 @@ p {
 
 /* < !--======OUR PORTFOLIO======--> */
 
+.our-new-portfolio:hover .paragraf-our {
+    transform: translateY(0);
+}
 .portfolio-container {
     width: 100%;
     padding: 96px 15px;
@@ -659,6 +675,7 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 
 }
 
@@ -1163,12 +1180,17 @@ position: fixed;
 }
 
 /* ====MOBAIL MENU===== */
+.contacts-menu-list {
+    font-family: "Roboto", sans-serif;
+}
 
-   .mobail-menu.is-open {
-    transform: translateX(0%);
-   } 
+@media screen and (min-width:320px) and (max-width:767px) {
+    
+.mobail-menu.is-open {
+        transform: translateX(0%);
+    }
 
-.mobail-menu {
+    .mobail-menu {
         display: flex;
         position: fixed;
         z-index: 10;
@@ -1183,12 +1205,14 @@ position: fixed;
         overflow-y: auto;
         transform: translate(100%);
     }
-        .menu-list-item {
-            flex-direction: column;
-        }
- .mobail-menu-nav {
-    margin-bottom: 168px;
- }
+
+    .menu-list-item {
+        flex-direction: column;
+    }
+
+    .mobail-menu-nav {
+        margin-bottom: 168px;
+    }
 
     .mobail-menu-close-btn {
         display: flex;
@@ -1208,13 +1232,13 @@ position: fixed;
         border-radius: 50%;
     }
 
-  
+
 
     .not-scroll-header {
         overflow-y: hidden;
     }
 
- 
+
 
     .menu-list-item {
         display: flex;
@@ -1234,9 +1258,10 @@ position: fixed;
         color: #2e2f42;
     }
 
-    
+}
+   
 
-@media screen and (min-width:320px) {
+@media screen and (max-width:320px) {
     .container {
         margine: 0;
     }
