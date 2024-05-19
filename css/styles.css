@@ -215,8 +215,6 @@ p {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-top: 16px;
-    padding-bottom: 16px;
 }
 
 .nav-adress-one {
@@ -479,6 +477,9 @@ p {
     .benefits-div{
         display: none;
     }
+    .title-benefits {
+        text-align: left;
+    }
 
     .title-class {
         display: flex;
@@ -499,6 +500,13 @@ p {
     }
     .title-container {
         width: calc((100% - 24px) / 2);
+    }
+
+    .all-benefits {
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
     }
 }
 
@@ -533,6 +541,15 @@ p {
     padding: 96px 0;
 }
 
+.team {
+        display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 72px;
+            width: calc(100% - 24px);
+            margin: 0 auto;
+}
+
 .title-team {
     font-weight: 700;
     font-size: 36px;
@@ -556,7 +573,6 @@ p {
 .team-our {
     border-radius: 0 0 4px 4px;
     background-color: #FFFFFF;
-    
     overflow: hidden;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -644,6 +660,14 @@ p {
 
 
 /* < !--======OUR PORTFOLIO======--> */
+.section-portfolio {
+    padding: 96px 0;
+}
+
+.our-new-portfolio {
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .our-new-portfolio:hover .paragraf-our {
     transform: translateY(0);
@@ -782,10 +806,7 @@ p {
     padding: 96px 0;
 }
 
-.paragraf-footer {
-    text-align: center;
-    justify-content: center;
-}
+
 
 .logo-footer {
     font-family: "Raleway", sans-serif;
@@ -825,7 +846,6 @@ p {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
-    text-align: center;
     margin-bottom: 16px;
 
 }
@@ -862,6 +882,11 @@ p {
 
 }
 
+.icon-send-telegram {
+    margin-left: 16px;
+    fill: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .svg-footer {
     display: flex;
     width: 100%;
@@ -936,10 +961,14 @@ p {
         text-align: left;
         padding-left: 108px;
     }
+    .in-logo-class {
+        width: 264px;
+    }
 
     .form-footer {
         flex-direction: row;
-        gap:40px;
+        gap: 24px;
+
         
     }
 }
