@@ -654,6 +654,11 @@ p {
     margin: 0 auto;
 }
 
+.img-flex {
+    max-width: 100%;
+    object-fit: cover;
+}
+
 .title-team-portfolio {
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -898,7 +903,6 @@ p {
     color: #ffffff;
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-bottom: 16px;
 }
 
 .anketa-footer-buttom {
@@ -947,7 +951,7 @@ p {
     }
 
     .footer-section {
-        padding-left:  0;
+        padding-left:  15px;
         gap: 0;
     }
     .paragraf-footer {
@@ -1200,6 +1204,13 @@ position: fixed;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #4d5ae5;
+}
+
+.team-images-mobail {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
 }
 
 .menu-adress {
