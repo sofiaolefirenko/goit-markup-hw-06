@@ -54,10 +54,12 @@ p {
 }
 
 .container {
-    max-width: 1158px;
+    max-width: 320px;
     padding: 0 16px;
-    margin: 0
+    margin: 0 auto;
 }
+
+
 
 @media screen and (min-width: 768px ) {
     .container {
@@ -483,11 +485,6 @@ p {
 
     .title-class {
         display: flex;
-    }
-    .container {
-        max-width: 1158px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
     .benefits-class {
         padding: 96px 0;
