@@ -81,6 +81,9 @@ p {
 /* < !--====TABLET HEADER MENU=======--> */
 /* ========HEADER======= */
 
+.mobail-mobail {
+    height: 100%;
+}
 
 .menu-contact-header {
     font-family: "Roboto", sans-serif;
@@ -89,6 +92,18 @@ p {
         line-height: 1.16667;
         letter-spacing: 0.04em;
         color: #434455;
+}
+
+@media screen and (min-width:115px) {
+    .menu-contact-header {
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    
 }
 .menu-contact {
     font-family: "Roboto", sans-serif;
@@ -455,12 +470,13 @@ p {
     padding: 96px 0;
 }
 .title-container {
-    margin-bottom: 72px;
     width: 100%;
 }
 
 .title-class {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .all-benefits {
