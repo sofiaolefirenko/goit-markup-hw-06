@@ -1243,18 +1243,12 @@ position: fixed;
 }
 
 /* ====MOBAIL MENU===== */
-.footer-div {
-    margin: auto;
-}
 .mobail-mobail {
-    margin: auto;
-        position: relative;
-            padding-top: 72px;
-            padding-bottom: 40px;
             display: flex;
             flex-direction: column;
             row-gap: 48px;
             height: 100%;
+            justify-content: space-between;
 }
 .contacts-menu-list {
     font-family: "Roboto", sans-serif;
@@ -1268,7 +1262,6 @@ position: fixed;
 
 .team-images-mobail {
     display: flex;
-    justify-content: center;
     gap: 40px;
 
 }
@@ -1295,12 +1288,9 @@ position: fixed;
     
 .mobail-menu.is-open {
         transform: translateX(0%);
-        display: flex;
-            flex-direction: column;
     }
 
     .mobail-menu {
-        display: flex;
         position: fixed;
         z-index: 10;
         top: 0;
@@ -1319,9 +1309,6 @@ position: fixed;
         flex-direction: column;
     }
 
-    .mobail-menu-nav {
-        margin-bottom: 168px;
-    }
 
     .mobail-menu-close-btn {
         display: flex;
